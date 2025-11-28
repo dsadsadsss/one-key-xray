@@ -20,7 +20,7 @@ NKEY  哪吒密钥
 
 SUB_NAME 节点名称
 
-TOK 隧道密钥  
+TOK 固定隧道token  
 
 DOM 隧道域名 
 
