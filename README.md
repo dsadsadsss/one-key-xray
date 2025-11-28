@@ -6,21 +6,25 @@
 
 带哪吒和临时隧道的：
 ```
-NSERVER='' NKEY='' SUB_NAME='vps' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
+NSERVER='' NKEY='' SUB_NAME='vps' XIEYI='vms' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
 ```
 带哪吒和固定隧道的：
 ```
-NSERVER='' NKEY='' SUB_NAME='vps' TOK='' DOM='' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
+NSERVER='' NKEY='' SUB_NAME='vps' TOK='' DOM='' XIEYI='vms' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
 ```
-其他可选参数:
+参数解释:
 
-TOK 隧道  
+NSERVER 哪吒服务器，v1格式：服务器地址:端口
+
+NKEY  哪吒密钥
+
+SUB_NAME 节点名称
+
+TOK 隧道密钥  
 
 DOM 隧道域名 
 
-SUB_NAME 节点名称，
-
-TMP_ARGO 节点类型，可选vls,vms，rel,socks,tuic,hy2,3x等,默认为3x，即vmess.tuic,hy2三协议
+XIEYI 节点类型，可选vls,vms，rel,socks,tuic,hy2,3x，ech等,默认为vms，3x包含vmess.tuic,hy2三协议
 
 
 
