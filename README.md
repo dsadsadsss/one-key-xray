@@ -4,9 +4,13 @@
 
 #### SSH登陆后执行
 
-
+带哪吒和临时隧道的：
 ```
-NEZHA_SERVER='' NEZHA_KEY='' SUB_NAME='serv00' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
+NSERVER='' NKEY='' SUB_NAME='vps' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
+```
+带哪吒和固定隧道的：
+```
+NSERVER='' NKEY='' SUB_NAME='vps' TOK='' DOM='' bash <(curl -Ls https://dl.argo.nyc.mn/ser.sh)
 ```
 其他可选参数:
 
